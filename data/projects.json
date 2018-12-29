@@ -1,0 +1,173 @@
+[
+	{
+		"title":"Mason Parking",
+		"desc":"Parking monitoring technology is ripe for renovation. The outdated and costly approach of detection sensors are over. With the rising developments of computer vision, we plan on implementing a low cost solution with friendly UI through a cross platform software on cellular devices for Mason Parking..",
+		"link":"github.com/gmuieee/",
+		"img":"/images/dalal.jpg",
+		"developers": [
+			{
+				"name": "Vincent Guevara",
+				"img": "/images/members/Deep.jpg"
+			},
+			{
+				"name": "Toan Tran",
+				"img": "/images/members/parth.jpg"
+			},
+			{
+				"name": "Jay Deorukhkar",
+				"img": "/images/members/gautham.jpg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/Pai.jpg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/Sibi.jpg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/santhosh_kumar_m.jpg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/harsh.jpg"
+			}
+		],
+		"active":true
+	},
+
+	{
+		"title":"Mason Green",
+		"desc":"",
+		"link":"",
+		"img":"/images/codeCharacter.png",
+		"developers": [
+			{
+				"name": "Michael Nguyen",
+				"img": "/images/members/venkat.jpg"
+			},
+			{
+				"name": "Ji Kuo",
+				"img": "/images/members/anirudhsundar.jpg"
+			},
+			{
+				"name": "Binh Tran",
+				"img": "/images/members/arunramachandran.jpg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/Soorya_Narayan.jpg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/sachin.jpg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/Tanvi.jpg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/ShivashisP.jpg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/Sai_Hemanth_B.jpeg"
+			}
+		],
+		"active":true
+	},
+	{
+		"title":"Drones and UAVs",
+		"desc":"",
+		"link":"",
+		"img":"/images/ppl.jpeg",
+		"developers": [
+			{
+				"name": "Binh Tran",
+				"img": "/images/members/AjayNataraj.jpg"
+			},
+			{
+				"name": "Ji Kuo",
+				"img": "/images/members/Arut.jpg"
+			},
+			{
+				"name": "Dom Huh",
+				"img": "/images/members/Anirudh.jpeg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/Ajish.jpeg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/Vikram.jpg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/Hari.jpg"
+			}
+		],
+		"active":true
+	},
+	{
+		"title":"Neural Network Development",
+		"desc":"",
+		"link":"github.com/gmuieee",
+		"img":"/images/beerf.jpg",
+		"developers": [
+			{
+				"name": "Dom Huh",
+				"img": "/images/members/santa.jpg"
+			},
+			{
+				"name": "Jay Deorukhkar",
+				"img": "/images/members/kunaal.jpeg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/Shubham.jpeg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/Sriranganathan.jpg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/shravan.jpg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/Ezhil.jpg"
+			},
+			{
+				"name": "",
+				"img": "/images/members/Naven.jpg"
+			}
+		],
+		"active":true
+	},
+
+	{
+		"title":"Nonlinear Control Systems Research",
+		"desc":"A CLI utility to run your code against sample test cases for Codeforces, Codechef, Hackerrank and Spoj. Without leaving the terminal. For competitive programming enthusiasts.",
+		"link":"http://github.com/coderick14/ACedIt",
+		"img":"/images/acedit.png",
+		"developers": [
+			{
+				"name": "Zaem Gauher",
+				"img": "/images/members/Deep.jpg"
+			},
+			{
+				"name": "Timothy Bullock",
+				"img": "/images/members/lakshmanaram.jpg"
+			},
+			{
+				"name": "Dom Huh",
+				"img": "/images/members/lakshmanaram.jpg"
+			}
+		],
+		"active":true
+	}
+]
