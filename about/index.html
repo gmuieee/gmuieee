@@ -1,241 +1,60 @@
 <!DOCTYPE html>
 <html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>GMU IEEE</title>
+.bgimg {
+  background-image: url('/w3images/forestbridge.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="GMU, gmu, IEEE, ieee, GMU IEEE, gmu ieee,
-					  George Mason University, Institute of Electronics and Electrical Engineers
-					  , George Mason University Institute of Electronics and Electrical Engineers">
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
 
-	<!-- OG Tags -->
-	<meta property="og:url" content="https://gmuieee.github.io" />
-	<meta property="og:title" content="🎄GMU IEEE🎄" />
-	<meta property="og:description" content="George Mason University's Institute of Electronics and Electrical Engineers" />
-	<meta property="og:image" content="/images/deltaLogoGreen.PNG" />
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
 
-	<!-- Jquery CDN -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- Latest compiled and minified CSS - Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- Latest compiled and minified JavaScript - Bootstrap -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
-	<!-- Our Stylesheets -->
-	<link href="css/base.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="images/favicon.ico"/>
-
-
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<style>
-		.mySlides {display:none;}
-	</style>
-
-</head>
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
 <body>
 
-
-
-	<div id="main-body-container">
-		<!-- Nav Bar -->
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="/"><img src="/images/deltaLogoGreen.PNG" width="20px"></a>
-				</div>
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<!-- Navbar left side links -->
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="">Home<span class="sr-only">(current)</span></a></li>
-						<!--<li><a href="members/">Leaders</a></li>-->
-						<li><a href="/about/">About</a></li>
-						<li><a href="/workshops/">Workshops</a></li>
-						<li><a href="/projects/">Projects</a></li>
-						<li><a href="/partners/">Partners</a></li>
-						<li><a href="/members/">Members</a></li>
-					</ul>
-					<!-- Navbar right side links -->
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="https://getconnected.gmu.edu/organization/inst-of-electrical-and-electronics-engineers">GetConnected</a></li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
-
-		<!-- Landing Section -->
-
-		<section id="landing" class="outer-container first-container">
-
-			<!-- <h1>Hello</h1> -->
-			<div id="deltaLogoDiv" class="outer-container">
-				<div id="particles-js" style="height:160px"><!--Erase-->
-				<img src="images/deltaLogoGreen.PNG" width="175px">
-				</div><!-- Erase-->
-			</div>
-
-
-			<!-- Div to contain scramble text, populated in main.js, designed in main.css -->
-			<div class="container">
-				<div class="text"></div>
-			</div>
-
-		</section>
-
-
-		<section id="whoWeAre" class="outer-container hcenter">
-			<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-4 hcenter vcenter">
-					<img id="whoWeAreImage" src="images/whoweAre.PNG" width="100%">
-				</div>
-				<div class="col-md-6 vcenter hcenter">
-					<h1 class="subtopic">About Us</h1>
-					<p class="section-1-content">
-						Our vision is to advance GMU Engineering to the forefronts of technological innovation through applied research.
-					</p>
-					<!--<a href="https://getconnected.gmu.edu/organization/inst-of-electrical-and-electronics-engineers"><button class="btn btn-default btn-lg light-button">Sign up for email updates</button></a>
-				--></div>
-				<div class="col-md-1"></div>
-		</section>
-
-		<section id="whatWeDo" class="outer-container hcenter">
-			<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-6 vcenter hcenter">
-					<h1 class="subtopic">What We Do</h1>
-					<p class="section-1-content">
-						GMU IEEE strives to provide opportunities for students to explore new technologies and
-						pursue their creativity in the fields of engineering with workshops, projects, competitions,
-						and networking events.
-
-					</p>
-					<a href="#events"><button type="button" class="btn btn-default btn-lg light-button">Learn more</button></a>
-				</div>
-				<div class="col-md-4 hcenter vcenter">
-					<div class="w3-content w3-display-container">
-  						<img class="mySlides" src="images/SS2.png" style="height:350px; width:100%">
-  						<img class="mySlides" src="images/SS1.png" style="height:350px; width:100%">
-  						<img class="mySlides" src="images/whatweDo.png" style="height:350px; width:100%">
-						<img class="mySlides" src="images/ieee_meeting.jpg" style="height:350px; width:100%">
-  						<!--<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  						<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-					--></div>
-				</div>
-				<div class="col-md-1"></div>
-			</div>
-		</section>
-
-
-
-
-		<section id="events" class="outer-container">
-			<h1 class="subtopic">Events</h1>
-
-			<div class="event hcenter">
-				<p>Calendar</p>
-				<iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=hl50da6dndltujf5uvnq4lvn0k%40group.calendar.google.com&amp;color=green&amp;ctz=America%2FNew_York" style="border-width:0" width="80%" height="400px" frameborder="0" scrolling="no"></iframe>
-				<h2 class="subtopic" style="visibility:hidden;">Workshops</h2>
-				<div style="border-style: solid; border-color: green; width: 70%; display: inline-block">
-					<iframe src="https://giphy.com/embed/5cksGmevMhyCI" width="50%" height="auto" frameBorder="0" class="event-image"></iframe>
-				<h2 class="subtopic">Workshops</h2>
-				<p style="color=white">GMU IEEE hosts workshops lead by undergraduate, graduates, and professionals.<br> If you wish to lead a workshop, contact <a href="mailto:ieee.gmu@gmail.com"> HERE</a>.<br>
-						Workshops are OPEN to EVERYONE</p><br>
-					<a href="/workshops/"><button class="btn btn-default btn-lg dark-button">Learn More</button></a>
-				<br><br>
-					    <iframe src="https://giphy.com/embed/J0ehmPrkg6H3a" width="50%" height="auto" frameBorder="0" class="event-image"></iframe>
-					</div>
-				<br>
-
-				<h2 class="subtopic" style="visibility:hidden;">Projects</h2>
-				<div style="border-style: solid; border-color: yellow; width: 70%; display: inline-block">
-					<iframe src="https://giphy.com/embed/PHCSahet0fsnm" width="100%" height="auto" frameBorder="0" class="event-image"></iframe>
-				<h2 class="subtopic">Projects</h2>
-					<p style="color=white">GMU IEEE sponsors projects proposed by undergraduate and graduate students.<br> If you wish to head a project, contact <a href="mailto:ieee.gmu@gmail.com"> HERE</a>.<br>
-						Projects are OPEN to EVERYONE</p><br>
-					<a href="/projects/"><button class="btn btn-default btn-lg dark-button">Learn More</button></a>
-				<br><br>
-						<iframe src="https://giphy.com/embed/q0IXHcg4MJirm" width="100%" height="auto" frameBorder="0" class="event-image"></iframe>
-				</div>
-				<br>
-
-				<h2 class="subtopic" style="visibility:hidden;">Networking Events</h2>
-				<div style="border-style: solid; border-color: green; width: 70%; display: inline-block ">
-					<iframe src="https://giphy.com/embed/TdSu5z4NDxCaQ" width="100%" height="auto" frameBorder="0" class="event-image"></iframe>
-				<h2 class="subtopic">Networking Events</h2>
-					<p style="color=white">For more information about networking events, <br>
-						please contact Daniel Rodriguez<a href="mailto:drodrig@gmu.edu"> CONTACT</a><br>
-							<br>Companies and organizations frequently conduct visits through GMU IEEE
-								for recruitment or tech talks. Updates on these events are found via email,
-								and flyers posted throughout the campus.<br>
-							<br>IEEE Social is a great networking event for engineering students to meet
-								new people, as well as eat amazing free food(Chick-Fila, Chipotle, Panera, etc),
-					play games(video/board), and talk to fellow engineering majors<br></p>
-					<a href="/projects/"><button class="btn btn-default btn-lg dark-button">Learn More</button></a>
-				<br><br>
-					<iframe src="https://giphy.com/embed/KYElw07kzDspaBOwf9" width="100%" height="auto" frameBorder="0" class="event-image"></iframe>
-						<!--<iframe src="https://giphy.com/embed/l0MYt5jPR6QX5pnqM" width="100%" height="auto" frameBorder="0" class="event-image"></iframe>-->
-				</div>
-				<br>
-
-
-
-
-			<hr class="separator" style="width:100%">
-			<div class="event hcenter">
-				<h1 class="subtopic">Leader <br> 2018-2019</h1>
-				<p>
-					<br> President: Dom Huh <a href="mailto:dhuh4@gmu.edu"> CONTACT</a>
-					<br> Vice-President: Daniel Rodriguez <a href="mailto:drodrig@gmu.edu"> CONTACT</a>
-					<br> Secretary: Michael Nguyen <a href="mailto:mnguye61@gmu.edu"> CONTACT</a>
-					<br> Webmaster: Toan Tran <a href="mailto:ttran82@gmu.edu"> CONTACT</a>
-					<br> Project Director: Vincent Guevara <a href="mailto:vguevara@gmu.edu"> CONTACT</a>
-					<br> Historian: Fateema Farzana <a href="mailto:ffarzana@gmu.edu"> CONTACT</a>
-					<br> Treasurer: Weifan Wu <a href="mailto:wwu6@gmu.edu"> CONTACT</a>
-					<br> Public Relations Chair: Melany Evangelista <a href="mailto:mevanage2@gmu.edu"> CONTACT</a>
-					<br> Event Coordinator: Baseerat Chaudery <a href="mailto:bchaudery@gmu.edu"> CONTACT</a>
-					<br> Senior Advisor: Snehashis Paul <a href="mailto:spaul20@gmu.edu"> CONTACT</a>
-					<br> Senior Advisor: Jafetra Rambelo <a href="mailto:jrambelo@gmu.edu"> CONTACT</a>
-					<br> Director of Marketing: Noah Newman <a href="mailto:nnewman6@gmu.edu"> CONTACT</a>
-					<br> Director of Design: Lauren Pacheco <a href="mailto:lpacheco@gmu.edu"> CONTACT</a>
-					<br> Faculty Advisor: Jill Nelson <a href="mailto:jnelson@gmu.edu"> CONTACT</a><br>
-
-				</p>
-			</div>
-			</div>
-		</section>
-
-	</div>
-
-	<footer class="love-footer-dark">
-		Webmaster: Toan Tran, Dom Huh, Vincent Guevara (Support from: <a href="https://github.com/delta">Delta Force</a>, <a href="https://github.com/VincentGarreau">Vincent Garreau</a>)
-	</footer>
-
-	<!-- Main Script -->
-	<script src="js/main.js"></script>
-	<script src="particles.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/sildes.js"></script>
-
-
+<div class="bgimg">
+  <div class="topleft">
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+  </div>
+  <div class="bottomleft">
+    <a href="/">Back to Home</a>
+  </div>
+</div>
 
 </body>
 </html>
