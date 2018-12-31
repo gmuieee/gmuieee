@@ -55,12 +55,14 @@
 /* Who We Are Section */
 #whoWeAre {
   background-color: white;
+   word-break: break-word;
 }
 /* End of Who We Are Section */
 
 /* What We Do Section */
 #whatWeDo {
   background-color: white;
+   word-break: break-word;
 }
 
 #whatWeDoImage {
@@ -77,16 +79,19 @@ p.section-1-content {
   background-color: #212121;
   word-spacing: 1px;
   border-bottom: 1px solid rgb(70,70,70);
+   word-break: break-word;
 }
 
 #events .subtopic, .event p {
   color: white;
    word-spacing: 1px;
+    word-break: break-word;
 }
 
 .event .subtopic {
   word-spacing: 1px;
   font-size: 26px;
+   word-break: break-word;
 }
 
 .event img {
@@ -112,19 +117,19 @@ p.section-1-content {
       }
       
       20% {
-        color: #59c643;
+        color: #6aff66;
       }
       
       40% {
-        color: #ef7270;
+        color: #07ba01;
       }
       
       60% {
-        color: #dd403e;
+        color: #059e00;
       }
   
       80% {
-        color: #c10c09;
+        color: #069301;
       }
       
     }

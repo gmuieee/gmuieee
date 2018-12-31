@@ -88,11 +88,9 @@ var TextScramble = function () {
 // ——————————————————————————————————————————————————
 
 var phrases = [
-  'Happy Holidays!!!',
   'Welcome to GMU IEEE',
   'We focus on professional development',
-  'We pursue research in technology',
-  'Happy Holidays!!!'
+  'We pursue research in technology'
 ];
 
 var el = document.querySelector('.text');
