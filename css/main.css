@@ -75,15 +75,17 @@ p.section-1-content {
 /* Events Section */
 #events {
   background-color: #212121;
-
+  word-spacing: 1px;
   border-bottom: 1px solid rgb(70,70,70);
 }
 
 #events .subtopic, .event p {
   color: white;
+   word-spacing: 1px;
 }
 
 .event .subtopic {
+  word-spacing: 1px;
   font-size: 26px;
 }
 
