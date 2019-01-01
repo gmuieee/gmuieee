@@ -1,0 +1,25 @@
+.audio{
+
+    background: gray;
+    text-align: center;
+    border: 25px solid green;
+    font-family: "Times New Roman", Times, serif;
+    opacity: 0.95;
+    margin: 25%;
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+    line-height: 30px;
+}
+p{
+    font-size: 30px;
+    color: white;
+}
+
+button{
+        font-family: "Times New Roman", Times, serif;
+        font-size: 30px;
+
+}

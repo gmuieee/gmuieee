@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Mason Neural</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!--JS Audio Neural-->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/speech-commands"></script>
+
+</head>
+<body>
+
+
+    <!--AUDIO MODEL-->
+    <div class="audio">
+        <h1>Mason Audio<br><font size="3">Pulled from tf.js documentation<br><br>To use this model, input data for left, right, and
+        noise by recording audio after holding the button down. Once you have recorded all three, train the model. You can then test out the
+        model by sliding the slider below after pressing "Start"</font></h1>
+    <button id="left" onmousedown="collect(0)" onmouseup="collect(null)">Left</button>
+    <button id="right" onmousedown="collect(1)" onmouseup="collect(null)">Right</button>
+    <button id="noise" onmousedown="collect(2)" onmouseup="collect(null)">Noise</button>
+    <br/><br/>
+        <p>Train on your commands</p>
+    <button id="train" onclick="train()">Train</button>
+    <br/><br/>
+    <button id="listen" onclick="listen()">Start</button><br><br>
+        <p>Adjust slider to hear AI</p>
+    <input type="range" id="output" min="0" max="10" step="0.1">
+    <div id="console"></div>
+    </div>
+
+
+
+    <!--JS scripts-->
+    <script src="index.js"></script>
+</body>
+</html>
