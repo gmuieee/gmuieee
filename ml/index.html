@@ -16,18 +16,19 @@
 
     <!--AUDIO MODEL-->
     <div class="audio">
-        <h1>Mason Audio<br><font size="3">Pulled from tf.js documentation<br><br>To use this model, input data for left, right, and
-        noise by recording audio after holding the button down. Once you have recorded all three, train the model. You can then test out the
-        model by sliding the slider below after pressing "Start"</font></h1>
-    <button id="left" onmousedown="collect(0)" onmouseup="collect(null)">Left</button>
-    <button id="right" onmousedown="collect(1)" onmouseup="collect(null)">Right</button>
-    <button id="noise" onmousedown="collect(2)" onmouseup="collect(null)">Noise</button>
+        <h1>Mason Audio<h1>
+            <font class="description">
+        To use this model, hold down the buttons ("left", "right", "noise") and record your command.
+        </font><br><br>
+    <button id="left" onmousedown="collect(0)" onmouseup="collect(null)">Left<br></button><div id="leftd"></div>
+    <button id="right" onmousedown="collect(1)" onmouseup="collect(null)">Right</button><div id="rightd"></div>
+    <button id="noise" onmousedown="collect(2)" onmouseup="collect(null)">Noise</button><div id="noised"></div>
     <br/><br/>
-        <p>Train on your commands</p>
+        <font class="description">Train on your commands</font>
     <button id="train" onclick="train()">Train</button>
     <br/><br/>
-    <button id="listen" onclick="listen()">Start</button><br><br>
-        <p>Adjust slider to hear AI</p>
+    <button id="listen" onclick="listen()">Start Game</button><br><br>
+        <font class="description">Slider will move as you speak</font>
     <input type="range" id="output" min="0" max="10" step="0.1">
     <div id="console"></div>
     </div>

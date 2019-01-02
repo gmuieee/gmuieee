@@ -11,13 +11,15 @@ function predictWord() {
    // Find the most probable word.
    scores.sort((s1, s2) => s2.score - s1.score);
    document.querySelector('#console').textContent = scores[0].word;
- }, {probabilityThreshold: 0.75});
+ }, {probabilityThreshold: 0.5});
 }
 
 // DATA COLLECTION
 const NUM_FRAMES = 3;
 let examples = [];
-
+let left=0;
+let right=0;
+let noise=0;
 function collect(label) {
  if (label == null) {
    return recognizer.stopListening();
@@ -25,8 +27,26 @@ function collect(label) {
  recognizer.listen(async ({spectrogram: {frameSize, data}}) => {
    let vals = normalize(data.subarray(-frameSize * NUM_FRAMES));
    examples.push({vals, label});
+
+     if (label == 0){
+       left++;
+       document.querySelector('#leftd').textContent =
+           `${left} sampled points collected`;
+        }
+
+     if (label == 1){
+       right++;
+       document.querySelector('#rightd').textContent =
+           `${right} sampled points collected`;
+        }
+     if (label == 2){
+       noise++;
+       document.querySelector('#noised').textContent =
+           `${noise} sampled points collected`;
+        }
+
    document.querySelector('#console').textContent =
-       "${examples.length} examples collected";
+       `${examples.length} total audio sampled points collected`;
  }, {
    overlapFactor: 0.999,
    includeSpectrogram: true,
@@ -46,6 +66,11 @@ const INPUT_SHAPE = [NUM_FRAMES, 232, 1];
 let model;
 
 async function train() {
+ if(examples.length<16){
+ document.querySelector('#console').textContent =
+           `Please input more data...`;
+    return;
+ }
  toggleButtons(false);
  const ys = tf.oneHot(examples.map(e => e.label), 3);
  const xsShape = [examples.length, ...INPUT_SHAPE];
@@ -102,7 +127,7 @@ async function moveSlider(labelTensor) {
  if (label == 2) {
    return;
  }
- let delta = 0.1;
+ let delta = 0.2;
  const prevValue = +document.getElementById('output').value;
  document.getElementById('output').value =
      prevValue + (label === 0 ? -delta : delta);
