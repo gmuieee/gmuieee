@@ -5,37 +5,68 @@
     <meta charset="UTF-8">
     <title>Mason Neural</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="animation.css">
 
     <!--JS Audio Neural-->
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/speech-commands"></script>
 
+
 </head>
 <body>
 
-
     <!--AUDIO MODEL-->
     <div class="audio">
-        <h1>Mason Audio<h1>
+        <h1>Mason Audio</h1>
             <font class="description">
-        To use this model, hold down the buttons ("left", "right", "noise") and record your command.
+                Instructions:<br>
+                1. Press visualize audio to test your microphone feedback. <br>
+                2. Hold down the buttons to record your command.<br>
+            &emsp;Note: BG Noise is background noise.<br>
+                3. Try to get at least 20 seconds of total data. <br>
+                4. Train the model.<br>
+                5. Test the model by starting the game!
         </font><br><br>
-    <button id="left" onmousedown="collect(0)" onmouseup="collect(null)">Left<br></button><div id="leftd"></div>
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+    <h2>Record Your Commands</h2>
+    <button id="left" onmousedown="collect(0)" onmouseup="collect(null)">Left</button><div id="leftd"></div>
     <button id="right" onmousedown="collect(1)" onmouseup="collect(null)">Right</button><div id="rightd"></div>
-    <button id="noise" onmousedown="collect(2)" onmouseup="collect(null)">Noise</button><div id="noised"></div>
-    <br/><br/>
-        <font class="description">Train on your commands</font>
+    <button id="noise" onmousedown="collect(2)" onmouseup="collect(null)">BG Noise</button><div id="noised"></div>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+
+            <div id="demo">
+                <div id="waveform"></div>
+
+                <div class="controls">
+                    <button id="micBtn" class="btn btn-primary" data-action="start">
+                        Visualizer
+                    </button>
+                </div>
+            </div>
+    <script src="microphone.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.microphone.js"></script>
+
+
+
+        </div>
+        </div>
+        <br>
+        <div id="console" class="console"></div>
+        <br>
+      <font class="description">Train the Neural Network</font><br>
     <button id="train" onclick="train()">Train</button>
     <br/><br/>
     <button id="listen" onclick="listen()">Start Game</button><br><br>
-        <font class="description">Slider will move as you speak</font>
-    <input type="range" id="output" min="0" max="10" step="0.1">
-    <div id="console"></div>
+          <canvas id="myCanvas" width="500" height="150"></canvas><br>
+        <input type="range" id="output" min="0" max="10" step="0.1">
     </div>
-
 
 
     <!--JS scripts-->
     <script src="index.js"></script>
+
 </body>
 </html>

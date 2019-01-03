@@ -1,5 +1,5 @@
 let recognizer;
-
+var start=false;
 //INFERENCE
 
 function predictWord() {
@@ -31,22 +31,22 @@ function collect(label) {
      if (label == 0){
        left++;
        document.querySelector('#leftd').textContent =
-           `${left} sampled points collected`;
+           `${Math.floor(left/40)} seconds of audio collected`;
         }
 
      if (label == 1){
        right++;
        document.querySelector('#rightd').textContent =
-           `${right} sampled points collected`;
+           `${Math.floor(right/40)} seconds of audio collected`;
         }
      if (label == 2){
        noise++;
        document.querySelector('#noised').textContent =
-           `${noise} sampled points collected`;
+           `${Math.floor(noise/40)} seconds of audio collected`;
         }
 
    document.querySelector('#console').textContent =
-       `${examples.length} total audio sampled points collected`;
+       `${Math.floor(examples.length/40)} total seconds of audio collected`;
  }, {
    overlapFactor: 0.999,
    includeSpectrogram: true,
@@ -121,11 +121,26 @@ function flatten(tensors) {
 }
 
 //Real-Time Prediction
+
+
+right = false;
+left = false;
+
+
 async function moveSlider(labelTensor) {
+
  const label = (await labelTensor.data())[0];
  document.getElementById('console').textContent = label;
  if (label == 2) {
+    right = false;
+    left = false;
    return;
+ }
+ if (label == 1) {
+    right=true;
+ }
+ if (label==0){
+    left=true;
  }
  let delta = 0.2;
  const prevValue = +document.getElementById('output').value;
@@ -134,6 +149,9 @@ async function moveSlider(labelTensor) {
 }
 
 function listen() {
+    var demo = document.querySelector('#demo');
+    demo.style.visibility='hidden';
+    setInterval(draw1,10);
  if (recognizer.isListening()) {
    recognizer.stopListening();
    toggleButtons(true);
@@ -168,3 +186,36 @@ async function app() {
 }
 
 app();
+
+
+
+//game
+var context;
+var dx= 5;
+var dy= 2;
+var y=100;
+var x=250;
+function draw1(){
+    context= myCanvas.getContext('2d');
+    context.clearRect(0,0,500,300);
+    context.beginPath();
+    context.fillStyle="green";
+    context.arc(x,y,10,0,Math.PI*2,true);
+    context.closePath();
+    context.fill();
+    if( x<10 || x>490)
+    dx=-dx;
+    if(right===true){
+    x+=dx;
+    }
+    if(left===true){
+    x-=dx;
+    }
+    if( y<20 || y>150)
+        dy=-dy;
+        y+=dy;
+    }
+
+
+
+
