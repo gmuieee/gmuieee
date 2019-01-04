@@ -3,26 +3,54 @@
     background: gray;
     text-align: center;
     border: 25px solid green;
-    font-family: "Times New Roman", Times, serif;
     opacity: 0.95;
+    font-family: "Courier New", Courier, monospace;
     margin: 25%;
 }
 
-h1{
-    font-size: 30px;
+.title{
+    font-size: 50px;
     color: white;
     line-height: 10px;
 }
+
+.subtitle{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 10px;
+    color: black;
+    line-height: 5px;
+}
+
+.instructions{
+    float:center;
+    text-align: center;
+    display:inline-block;
+    margin-left:5%;
+    margin-right:5%;
+    border:solid;
+    border-color:green;
+    color:white;
+}
+
+
 p{
     font-size: 30px;
     color: white;
+    line-height: 1px;
+}
+
+
+.subsection{
+    color:white;
+
+
 }
 
 button{
         font-family: "Times New Roman", Times, serif;
-        font-size: 30px;
+        font-size: 15px;
         display: inline-block;
-        line-height: 40px;
+        line-height: 20px;
 }
 
 leftd,rightd,noised{
@@ -33,7 +61,7 @@ leftd,rightd,noised{
 }
 .description{
     font-size: 20px;
-    color: black;
+    color: white;
     line-height: 20px;
 }
 
@@ -94,3 +122,9 @@ leftd,rightd,noised{
 #myCanvas {
 background:black;
 border:1px solid #cbcbcb; }
+
+.credit{
+    font-size: 10px;
+    color: black;
+    line-height: 5px;
+}

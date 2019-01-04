@@ -10,7 +10,6 @@ function predictWord() {
    scores = Array.from(scores).map((s, i) => ({score: s, word: words[i]}));
    // Find the most probable word.
    scores.sort((s1, s2) => s2.score - s1.score);
-   document.querySelector('#console').textContent = scores[0].word;
  }, {probabilityThreshold: 0.5});
 }
 
@@ -20,6 +19,10 @@ let examples = [];
 let left=0;
 let right=0;
 let noise=0;
+
+
+
+
 function collect(label) {
  if (label == null) {
    return recognizer.stopListening();
@@ -130,7 +133,6 @@ left = false;
 async function moveSlider(labelTensor) {
 
  const label = (await labelTensor.data())[0];
- document.getElementById('console').textContent = label;
  if (label == 2) {
     right = false;
     left = false;
@@ -149,13 +151,15 @@ async function moveSlider(labelTensor) {
 }
 
 function listen() {
+    level++;
     var demo = document.querySelector('#demo');
     demo.style.visibility='hidden';
+    reset=true;
     setInterval(draw1,10);
  if (recognizer.isListening()) {
    recognizer.stopListening();
    toggleButtons(true);
-   document.getElementById('listen').textContent = 'Listen';
+   document.getElementById('listen').textContent = 'Start';
    return;
  }
  toggleButtons(false);
@@ -190,30 +194,73 @@ app();
 
 
 //game
+var reset=false;
 var context;
-var dx= 5;
-var dy= 2;
+var enemy;
+var dx= 2;
+var dy= 1;
 var y=100;
-var x=250;
+var x=150;
+var x0=20;
+var dx0=1;
+var y0;
+var level = 0;
 function draw1(){
+    if(level>=5){
+         toggleButtons(false);
+         document.querySelector('#console').textContent =
+           `Level ${level} / 5. Refresh page to restart.`;
+    }
+    if(reset===true){
+        y=100;
+        x=150;
+        x0=20;
+        reset=false;
+    }
+    if(Math.abs(x-x0)<0.2 && y===y0 && level<5){
+        document.querySelector('#console').textContent =
+           `Level ${level} / 5`;
+        return;
+    }
+
+    //init
     context= myCanvas.getContext('2d');
-    context.clearRect(0,0,500,300);
+    context.clearRect(0,0,300,300);
     context.beginPath();
-    context.fillStyle="green";
+    context.fillStyle="green"
     context.arc(x,y,10,0,Math.PI*2,true);
     context.closePath();
     context.fill();
-    if( x<10 || x>490)
-    dx=-dx;
+
+    y0=y+Math.floor(Math.random() * Math.floor(2));
+    enemy= myCanvas.getContext('2d');
+    enemy.beginPath();
+    enemy.fillStyle="red"
+    enemy.arc(x0,y+Math.floor(Math.random() * Math.floor(2)),5,0,Math.PI*2,true);
+    enemy.closePath();
+    enemy.fill();
+    //movement restriction
+    if( x<10 || x>290){
+        dx=-dx;
+    }
+    if( x0<10 || x0>290){
+        dx0=-dx0;
+    }
+    if( y<20 || y>150){
+        dy=-dy;}
+
+
+    //user movement
     if(right===true){
     x+=dx;
     }
     if(left===true){
     x-=dx;
     }
-    if( y<20 || y>150)
-        dy=-dy;
-        y+=dy;
+
+    //gravity
+    y+=dy;
+    x0+=dx0;
     }
 
 
