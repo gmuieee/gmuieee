@@ -7,6 +7,28 @@
     font-family: "Courier New", Courier, monospace;
     margin: 25%;
 }
+#events {
+  background-color: #212121;
+  word-spacing: 1px;
+  border-bottom: 1px solid rgb(70,70,70);
+   word-break: break-word;
+}
+
+#events .subtopic, .event p {
+  color: white;
+   word-spacing: 1px;
+    word-break: break-word;
+}
+
+.event .subtopic {
+  word-spacing: 1px;
+  font-size: 26px;
+   word-break: break-word;
+}
+
+.event img {
+  margin: 20px 0px;
+}
 
 .title{
     font-size: 50px;
@@ -18,15 +40,16 @@
     font-family: "Times New Roman", Times, serif;
     font-size: 10px;
     color: black;
-    line-height: 5px;
+    line-height: auto;
+    margin:1%
 }
 
 .instructions{
     float:center;
     text-align: center;
     display:inline-block;
-    margin-left:5%;
-    margin-right:5%;
+    margin:5%;
+    padding:10%;
     border:solid;
     border-color:green;
     color:white;
@@ -36,8 +59,9 @@
 p{
     font-size: 30px;
     color: white;
-    line-height: 1px;
+    line-height: 5px;
 }
+
 
 
 .subsection{
@@ -68,13 +92,14 @@ leftd,rightd,noised{
 .column {
   float: left;
   width: 50%;
+  border-radius: 36px;
+  border:solid;
+  border-color:green;
 }
 
 .row:.column {
   float: left;
   width: 50%;
-  padding: 10px;
-
 }
 
 .row:after {
@@ -115,8 +140,82 @@ leftd,rightd,noised{
     margin-left:20%;
     margin-right:20%;
     background: white;
+}
 
+@-webkit-keyframes stripe-slide {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@keyframes stripe-slide {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
 
+.btn {
+  overflow: visible;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  -moz-user-select: text;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 36px 22px;
+  background-color: #fff;
+  color: #666;
+  border: 2px solid #666;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  transition: all .5s ease;
+}
+.btn:-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.btn--stripe {
+  overflow: hidden;
+  position: relative;
+}
+.btn--stripe:after {
+  content: '';
+  display: block;
+  height: 7px;
+  width: 100%;
+  background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 2px, transparent 5px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-top: 1px solid #666;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-size: 7px 7px;
+}
+.btn--stripe:hover {
+  background-color: #666;
+  color: #fff;
+  border-color: #000;
+}
+.btn--stripe:hover:after {
+  background-image: repeating-linear-gradient(45deg, #fff, #fff 1px, transparent 2px, transparent 5px);
+  border-top: 1px solid #000;
+  -webkit-animation: stripe-slide 12s infinite linear forwards;
+          animation: stripe-slide 12s infinite linear forwards;
+}
+.btn--large {
+  width: 50%;
+}
+.btn--radius {
+  border-radius: 36px;
 }
 
 #myCanvas {
@@ -127,4 +226,9 @@ border:1px solid #cbcbcb; }
     font-size: 10px;
     color: black;
     line-height: 5px;
+}
+
+p.credit{
+    font-size: 15px;
+    color: white;
 }

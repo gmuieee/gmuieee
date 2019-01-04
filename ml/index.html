@@ -2,73 +2,68 @@
 <html lang="en">
 <head>
 
-    <meta charset="UTF-8">
-    <title>Mason Neural</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" type="text/css" href="animation.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>GMU IEEE</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="GMU, gmu, IEEE, ieee, GMU IEEE, gmu ieee,
+					  George Mason University, Institute of Electronics and Electrical Engineers
+					  , George Mason University Institute of Electronics and Electrical Engineers">
+
+	<!-- OG Tags -->
+	<meta property="og:url" content="https://gmuieee.github.io" />
+	<meta property="og:title" content="🎄GMU IEEE🎄" />
+	<meta property="og:description" content="George Mason University's Institute of Electronics and Electrical Engineers" />
+	<meta property="og:image" content="/images/deltaLogoGreen.PNG" />
+
+	<!-- Jquery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS - Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript - Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/images/favicon.ico"/>
+
+    <link rel="stylesheet" type="text/css" href="main.min.css">
 
     <!--JS Audio Neural-->
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/speech-commands"></script>
 
 
+
+    <!-- Jquery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS - Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript - Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="/css/base.css" rel="stylesheet">
+	<link href="/css/projects.css" rel="stylesheet">
 </head>
 <body>
+<div id="main-body-container">
+		<!-- Nav Bar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top"><div class="container-fluid"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><img src="/images/deltaLogoGreen.PNG" width="20px"></a></div><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav"><li class="active"><a href="">Home<span class="sr-only">(current)</span></a></li><li><a href="/about/">About</a></li><li><a href="/workshops/">Workshops</a></li><li><a href="/projects/">Projects</a></li><li><a href="/partners/">Partners</a></li><li><a href="/members/">Members</a></li></ul><ul class="nav navbar-nav navbar-right"><li><a href="https://getconnected.gmu.edu/organization/inst-of-electrical-and-electronics-engineers">GetConnected</a></li></ul></div></div></nav>
+        <!--->
+
+
+<section id="hackerTalksDetails" class="outer-container first-container">
+
+            <h1 class="subtopic">Mason Neural</h1>
+			<hr> <hr>
 
     <!--AUDIO MODEL-->
-    <div class="audio">
-        <h1 class="title">MAGv0</h1>
-        <p class="subtitle">aka. Mason Audio Gaming (version.0)</p>
-        <div class="instructions">
-            <p>Instructions</p>
-                Press visualize audio to test your mic. feedback.<br>
-                Hold down the buttons to record your command.<br>
-                Try to get at least 5 seconds of per label.<br>
-                Train the model.<br>
-                Test the model by starting the game!
-        </div>
-        <br>
-        <div class="row">
-            <div class="column" style="background-color:gray">
-    <h2 class="subsection">Record Your Commands</h2>
-    <button id="left" onmousedown="collect(0)" onmouseup="collect(null)">Left</button><div id="leftd"></div>
-    <button id="right" onmousedown="collect(1)" onmouseup="collect(null)">Right</button><div id="rightd"></div>
-    <button id="noise" onmousedown="collect(2)" onmouseup="collect(null)">No Movement</button><div id="noised"></div>
-  </div>
-  <div class="column" style="background-color:gray;">
-            <h2 class="subsection">Mic. Audio Feedback</h2>
-            <div id="demo">
-                <div id="waveform"></div>
-
-                <div class="controls">
-                    <button id="micBtn" class="btn btn-primary" data-action="start">
-                        Visualize Feedback
-                    </button>
-                </div>
-            </div>
-    <script src="microphone.js"></script>
-    <script src="https://unpkg.com/wavesurfer.js"></script>
-    <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.microphone.js"></script>
-
-
-
-        </div>
-        </div>
-        <br>
-            <script src="index.js"></script>
-        <div id="console" class="console"></div>
-      <h2 class="subsection">Train the Neural Network</h2>
-        <button id="train" onclick="train()">Train</button>
-    <br/><br/>
-    <button id="listen" onclick="listen()">Start Game</button><br><br>
-          <canvas id="myCanvas" width="300" height="150"></canvas><br>
-        <input type="range" id="output" min="0" max="10" step="0.1">
-
-        <p>Learn more about the model <a href="/model_info/">here</a></p>
-        <footer class="credit">Created by Dom Huh (cred. Google)</footer>
-    </div>
-
-
-    <!--JS scripts-->
+    <div class="audio"> <h1 class="title">MAGv0</h1> <br><p class="subtitle">aka. Mason Audio Gaming (version.0)</p><div class="instructions"> <p>Instructions</p>Press visualize audio to test your mic. feedback.<br>Hold down the buttons to record your command.<br>Try to get at least 3 seconds of per label.<br>Train the model.<br>*Buttons will be disabled while training.<br>Test the model by starting the game! </div><br><div class="row"> <div class="column" style="background-color:#d0e2d4"> <h2 class="subsection" style="color:black">Record Your Commands</h2> <button class="btn btn--stripe" id="left" onmousedown="collect(0)" onmouseup="collect(null)">Left</button><div id="leftd"></div><button class="btn btn--stripe" id="right" onmousedown="collect(1)" onmouseup="collect(null)">Right</button><div id="rightd"></div><button class="btn btn--stripe" id="noise" onmousedown="collect(2)" onmouseup="collect(null)">No Movement</button><div id="noised"></div></div><div class="column" style="background-color:#d0e2d4;"> <h2 class="subsection" style="color:black">Microphone Audio Feedback</h2> <div id="demo"> <div id="waveform"></div><div class="controls"> <button id="micBtn" class="btn btn-primary" data-action="start"> Visualize Feedback </button> </div></div><script src="mic.min.js"></script> <script src="https://unpkg.com/wavesurfer.js"></script> <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.microphone.js"></script> </div></div><br><script src="index.min.js"></script> <div id="console" class="console"></div><br><button class="btn btn--stripe btn--large" id="train" onclick="train()">Train the Neural Network</button> <br/><br/> <button class="btn btn--stripe btn--radius" id="listen" onclick="listen()">Start Game</button><br><br><canvas id="myCanvas" width="300" height="150"></canvas><br><input type="range" id="output" min="0" max="10" step="0.1"> <p class="credit">Learn more about the model <a href="/model_info/">here</a></p><footer class="credit">Created by Dom Huh (cred. Google)</footer> </div>
+    <!---->
+</section>
+</div>
+	<footer class="love-footer-dark">
+		Webmaster: Toan Tran, Dom Huh, Vincent Guevara (Support from: <a href="https://github.com/delta">Delta Force</a>, <a href="https://github.com/VincentGarreau">Vincent Garreau</a>)
+	</footer>
 </body>
 </html>
