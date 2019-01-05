@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9022e0c2-3eb3-4431-b6bf-2182482992f1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ml/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml/index.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ml/index.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ml/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ml/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ml/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ml/main.min.css" afterDir="false" />
     </list>
@@ -19,45 +19,48 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="8" />
+          <entry key="css" value="9" />
           <entry key="html" value="1" />
-          <entry key="js" value="1" />
+          <entry key="js" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="8" />
+          <entry key="CSS" value="9" />
           <entry key="HTML" value="1" />
-          <entry key="JavaScript" value="1" />
+          <entry key="JavaScript" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="38" />
-          <entry key="html" value="7" />
+          <entry key="css" value="57" />
+          <entry key="html" value="28" />
+          <entry key="js" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="38" />
-          <entry key="HTML" value="7" />
+          <entry key="CSS" value="57" />
+          <entry key="HTML" value="28" />
+          <entry key="JavaScript" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ml/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
+            <state relative-caret-position="241">
+              <caret line="50" column="508" lean-forward="true" selection-start-line="50" selection-start-column="508" selection-end-line="50" selection-end-column="508" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -72,7 +75,34 @@
         <entry file="file://$PROJECT_DIR$/ml/main.min.css">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="72" selection-start-column="72" selection-end-column="72" />
+              <caret column="3007" selection-start-column="3007" selection-end-column="3007" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ml/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ml/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="257" column="10" lean-forward="true" selection-start-line="257" selection-start-column="10" selection-end-line="257" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ml/index.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -103,13 +133,13 @@
         <option value="$PROJECT_DIR$/ml/index.js" />
         <option value="$PROJECT_DIR$/ml/microphone.js" />
         <option value="$PROJECT_DIR$/ml/mic.min.js" />
-        <option value="$PROJECT_DIR$/ml/index.min.js" />
         <option value="$PROJECT_DIR$/projects/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/base.css" />
-        <option value="$PROJECT_DIR$/ml/main.css" />
-        <option value="$PROJECT_DIR$/ml/index.html" />
         <option value="$PROJECT_DIR$/ml/main.min.css" />
+        <option value="$PROJECT_DIR$/ml/index.min.js" />
+        <option value="$PROJECT_DIR$/ml/index.html" />
+        <option value="$PROJECT_DIR$/ml/main.css" />
       </list>
     </option>
   </component>
@@ -182,7 +212,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.118303575" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -211,13 +242,6 @@
     <entry file="file://$PROJECT_DIR$/ml/bounce.js" />
     <entry file="file://$PROJECT_DIR$/ml/animation.css" />
     <entry file="file://$PROJECT_DIR$/ml/scrap.html" />
-    <entry file="file://$PROJECT_DIR$/ml/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="257" column="10" lean-forward="true" selection-start-line="257" selection-start-column="10" selection-end-line="257" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/partners/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-755" />
@@ -227,7 +251,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ml/microphone.js" />
-    <entry file="file://$PROJECT_DIR$/ml/index.min.js" />
     <entry file="file://$PROJECT_DIR$/projects/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1146">
@@ -259,30 +282,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ml/main.css">
+    <entry file="file://$PROJECT_DIR$/ml/index.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="18" lean-forward="true" selection-end-line="236" selection-end-column="1" />
+        <state relative-caret-position="408">
+          <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ml/main.min.css">
+    <entry file="file://$PROJECT_DIR$/ml/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="72" selection-start-column="72" selection-end-column="72" />
+        <state relative-caret-position="550">
+          <caret line="257" column="10" lean-forward="true" selection-start-line="257" selection-start-column="10" selection-end-line="257" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ml/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
+        <state relative-caret-position="241">
+          <caret line="50" column="508" lean-forward="true" selection-start-line="50" selection-start-column="508" selection-end-line="50" selection-end-column="508" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#div#1;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ml/main.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3007" selection-start-column="3007" selection-end-column="3007" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ml/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
         </state>
       </provider>
     </entry>

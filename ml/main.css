@@ -8,6 +8,7 @@
     font-family: "Courier New", Courier, monospace;
     margin: 10%;
     word-break: break-word;
+    overflow: hidden;
 }
 #events {
   background-color: #212121;
@@ -51,7 +52,7 @@
     text-align: center;
     display:inline-block;
     margin:5%;
-    padding:10%;
+    padding:2.5%;
     border:solid;
     border-color:green;
     color:white;
@@ -60,17 +61,16 @@
 
 
 p{
-    font-size: 30px;
+    font-size: 15px;
     color: white;
-    line-height: 5px;
+    line-height: auto;
 }
 
 
 
 .subsection{
     color:white;
-
-
+    font-size: 20px;
 }
 
 button{
