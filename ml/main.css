@@ -5,7 +5,8 @@
     border: 25px solid green;
     opacity: 0.95;
     font-family: "Courier New", Courier, monospace;
-    margin: 25%;
+    margin: 10%;
+    word-break: break-word;
 }
 #events {
   background-color: #212121;
@@ -53,6 +54,7 @@
     border:solid;
     border-color:green;
     color:white;
+    word-break:break-word;
 }
 
 
