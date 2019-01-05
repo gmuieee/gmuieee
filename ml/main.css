@@ -1,5 +1,6 @@
 .audio{
-
+    width:80%
+    height:auto;
     background: gray;
     text-align: center;
     border: 25px solid green;
