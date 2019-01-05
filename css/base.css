@@ -59,7 +59,7 @@ section {
 
 @media only screen and (max-width: 550px) {
   p:not(.talk-info) {
-    text-align: justify;
+    text-align: left;
   }
 }
   
