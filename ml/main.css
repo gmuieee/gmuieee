@@ -94,10 +94,11 @@ leftd,rightd,noised{
 
 .column {
   float: left;
-  width: 50%;
+  width: 30%;
   border-radius: 36px;
   border:solid;
   border-color:green;
+  margin-left: 10%;
 }
 
 .row:.column {

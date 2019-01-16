@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>GMU IEEE</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="GMU, gmu, IEEE, ieee, GMU IEEE, gmu ieee,
+					  George Mason University, Institute of Electronics and Electrical Engineers
+					  , George Mason University Institute of Electronics and Electrical Engineers">
+
+	<!-- OG Tags -->
+	<meta property="og:url" content="https://gmuieee.github.io" />
+	<meta property="og:title" content="🎄GMU IEEE🎄" />
+	<meta property="og:description" content="George Mason University's Institute of Electronics and Electrical Engineers" />
+	<meta property="og:image" content="/images/deltaLogoGreen.PNG" />
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/images/favicon.ico"/>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!--JS Audio Neural-->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/speech-commands"></script>
+
+
+</head>
+<body style="background-color:#b5ff93">
+<button class="btn btn--stripe" onclick="window.location.href='/masonbrain/'">Return back to Mason Brain</button>
+    <!--AUDIO MODEL-->
+	<div class="audio"> <h1 class="title">MAGv0</h1> <br><p class="subtitle">aka. Mason Audio Gaming (version.0)</p><div class="instructions"> <p>Instructions <br>Press visualize audio to test your mic. feedback.<br>Hold down the buttons to record your command.<br>Try to get at least 3 seconds of per label.<br>Train the model.<br>*Buttons will be disabled while training.<br>Test the model by starting the game!</p> </div><br><div class="row"> <div class="column" style="background-color:#d0e2d4"> <h2 class="subsection" style="color:black">Record Your Commands</h2> <button class="btn btn--stripe" id="left" onmousedown="collect(0)" onmouseup="collect(null)">Left</button><div id="leftd"></div><button class="btn btn--stripe" id="right" onmousedown="collect(1)" onmouseup="collect(null)">Right</button><div id="rightd"></div><button class="btn btn--stripe" id="noise" onmousedown="collect(2)" onmouseup="collect(null)">No Movement</button><div id="noised"></div></div><div class="column" style="background-color:#d0e2d4;"> <h2 class="subsection" style="color:black">Mic. Audio Feedback</h2> <div id="demo"> <div id="waveform"></div><div class="controls"> <button id="micBtn" class="btn btn-primary" data-action="start"> Visualize Feedback </button> </div></div><script src="mic.min.js"></script> <script src="https://unpkg.com/wavesurfer.js"></script> <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.microphone.js"></script> </div></div><br><script src="index.min.js"></script> <div id="console" class="console"></div><br><button class="btn btn--stripe btn--large" id="train" onclick="train()">Train Model</button> <br/><br/> <button class="btn btn--stripe btn--radius" id="listen" onclick="listen()">Start Game</button><br><br><canvas id="myCanvas" width="250" height="150"></canvas><br><input type="range" id="output" min="0" max="10" step="0.1"> <p class="credit">Learn more about the model <a href="/model_info/">here</a></p><footer class="credit">Created by Dom Huh (cred. Google)</footer> </div>
+    <!---->
+
+</body>
+</html>

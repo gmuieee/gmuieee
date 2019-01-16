@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>GMU IEEE</title>
 
 	<meta charset="utf-8">
@@ -16,7 +16,7 @@
 	<meta property="og:url" content="https://gmuieee.github.io" />
 	<meta property="og:title" content="🎄GMU IEEE🎄" />
 	<meta property="og:description" content="George Mason University's Institute of Electronics and Electrical Engineers" />
-	<meta property="og:image" content="/images/deltaLogoGreen.PNG" />
+	<meta property="og:image" content="../images/deltaLogoGreen.PNG" />
 
 	<!-- Jquery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -24,44 +24,167 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Latest compiled and minified JavaScript - Bootstrap -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+	<!-- Our Stylesheets -->
+	<link href="../css/base.css" rel="stylesheet">
+	<link href="../css/main.css" rel="stylesheet">
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="/images/favicon.ico"/>
+	<link rel="icon" type="../image/png" href="images/favicon.ico"/>
 
-    <link rel="stylesheet" type="text/css" href="main.min.css">
+	<!-- Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131567013-1"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
 
-    <!--JS Audio Neural-->
-    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
-    <script src="https://unpkg.com/@tensorflow-models/speech-commands"></script>
+  	gtag('config', 'UA-131567013-1');
+	</script>
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		.mySlides {display:none;}
+
+h1 {
+  color: black;
+  display: block;
+  font: bold 72px Helvetica;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
 
 
+.textshadow .blurry-text {
+   text-shadow: 0 0 12px green;
+   color: transparent;
+}
+.textshadow .blurry-des {
+   text-shadow: 0 0 2px yellow;
+   color: transparent;
+}
+	</style>
 
-    <!-- Jquery CDN -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- Latest compiled and minified CSS - Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- Latest compiled and minified JavaScript - Bootstrap -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="/css/base.css" rel="stylesheet">
-	<link href="/css/projects.css" rel="stylesheet">
 </head>
 <body>
-<div id="main-body-container">
+
+
+
+	< id="main-body-container">
 		<!-- Nav Bar -->
-		<nav class="navbar navbar-inverse navbar-fixed-top"><div class="container-fluid"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><img src="/images/deltaLogoGreen.PNG" width="20px"></a></div><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav"><li><a href="">Home<span class="sr-only">(current)</span></a></li><li><a href="/about/">About</a></li><li><a href="/workshops/">Workshops</a></li><li><a href="/projects/">Projects</a></li><li><a href="/partners/">Partners</a></li><li><a href="/members/">Members</a></li></ul><ul class="nav navbar-nav navbar-right"><li><a href="https://getconnected.gmu.edu/organization/inst-of-electrical-and-electronics-engineers">GetConnected</a></li></ul></div></div></nav>
-        <!--->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/"><img src="../images/deltaLogoGreen.PNG" width="20px"></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<!-- Navbar left side links -->
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="">Home<span class="sr-only">(current)</span></a></li>
+						<!--<li><a href="members/">Leaders</a></li>-->
+						<li><a href="/about/">About</a></li>
+						<li><a href="/workshops/">Workshops</a></li>
+						<li><a href="/projects/">Projects</a></li>
+						<li><a href="/partners/">Partners</a></li>
+						<li><a href="/members/">Members</a></li>
+					</ul>
+					<!-- Navbar right side links -->
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="https://getconnected.gmu.edu/organization/inst-of-electrical-and-electronics-engineers">GetConnected</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<!-- Landing Section -->
 
 
-<section id="hackerTalksDetails" class="outer-container first-container">
 
-            <h1 class="subtopic">Mason Neural</h1>
-    <!--AUDIO MODEL-->
-	<div class="audio"> <h1 class="title">MAGv0</h1> <br><p class="subtitle">aka. Mason Audio Gaming (version.0)</p><div class="instructions"> <p>Instructions <br>Press visualize audio to test your mic. feedback.<br>Hold down the buttons to record your command.<br>Try to get at least 3 seconds of per label.<br>Train the model.<br>*Buttons will be disabled while training.<br>Test the model by starting the game!</p> </div><br><div class="row"> <div class="column" style="background-color:#d0e2d4"> <h2 class="subsection" style="color:black">Record Your Commands</h2> <button class="btn btn--stripe" id="left" onmousedown="collect(0)" onmouseup="collect(null)">Left</button><div id="leftd"></div><button class="btn btn--stripe" id="right" onmousedown="collect(1)" onmouseup="collect(null)">Right</button><div id="rightd"></div><button class="btn btn--stripe" id="noise" onmousedown="collect(2)" onmouseup="collect(null)">No Movement</button><div id="noised"></div></div><div class="column" style="background-color:#d0e2d4;"> <h2 class="subsection" style="color:black">Mic. Audio Feedback</h2> <div id="demo"> <div id="waveform"></div><div class="controls"> <button id="micBtn" class="btn btn-primary" data-action="start"> Visualize Feedback </button> </div></div><script src="mic.min.js"></script> <script src="https://unpkg.com/wavesurfer.js"></script> <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.microphone.js"></script> </div></div><br><script src="index.min.js"></script> <div id="console" class="console"></div><br><button class="btn btn--stripe btn--large" id="train" onclick="train()">Train Model</button> <br/><br/> <button class="btn btn--stripe btn--radius" id="listen" onclick="listen()">Start Game</button><br><br><canvas id="myCanvas" width="250" height="150"></canvas><br><input type="range" id="output" min="0" max="10" step="0.1"> <p class="credit">Learn more about the model <a href="/model_info/">here</a></p><footer class="credit">Created by Dom Huh (cred. Google)</footer> </div>
-    <!---->
-</section>
-</div>
+
+		<section id="whatWeDo" class="outer-container hcenter" style="background-color:black">
+			<div class="row">
+				<div class="col-md-1"></div>
+					<h1 class="blurry-text">Mason Brain</h1>
+					<p class="blurry-des">
+						Mason Brain focuses on developing machine learning models.<br> To join, a basic understanding
+						of data science and machine learning is required.<br> We use various frameworks to research and develop ML models.
+					</p>
+			</div><br>
+		</section>
+
+
+
+
+		<section id="events" class="outer-container">
+			<h1 class="subtopic">Our Models</h1>
+
+			<div class="event hcenter">
+
+				<h2 class="subtopic" style="visibility:hidden;">MAG</h2>
+				<div style="border-style: solid; border-color: green; width: 80%; height:auto; display: inline-block; word-break: break-word;">
+				<h2 class="subtopic">Mason Audio Gaming</h2>
+				<p style="color=white"> Version:0 <br>Description: Coming Soon</p><br>
+					<a href="/ml/mag"><button class="btn btn-default btn-lg dark-button">Demo</button></a>
+				</div>
+				<br>
+
+				<h2 class="subtopic" style="visibility:hidden;">MIC</h2>
+				<div style="border-style: solid; border-color: yellow; width: 80%; height:auto; display: inline-block; word-break: break-word;">
+				<h2 class="subtopic">Mason Image Captioning</h2>
+					<p style="color=white">Version:0 <br>Description: Coming Soon</p><br>
+					<a href="/ml/"><button class="btn btn-default btn-lg dark-button">Coming Soon</button></a>
+				</div>
+				<br>
+
+				<h2 class="subtopic" style="visibility:hidden;">MFRS</h2>
+				<div style="border-style: solid; border-color: green; width: 80%; height:auto; display: inline-block; word-break: break-word; ">
+				<h2 class="subtopic">Mason Face Recognition Security</h2>
+					<p style="color=white">Version:0 <br>Description: Coming Soon</p>
+					<a href="/ml/"><button class="btn btn-default btn-lg dark-button">Coming Soon</button></a>
+				<br><br>
+				</div>
+				<br>
+
+				<hr>
+
+
+			<hr id ="about" class="separator" style="width:100%">
+			<div class="event hcenter">
+				<h1 class="subtopic">Developers</h1>
+				<p>
+					Dom Huh
+					<br> Jay Deorukhkar
+					<br>
+				</p>
+			</div>
+			</div>
+			<br>
+		</section>
+
+	</div>
+
 	<footer class="love-footer-dark">
 		Webmaster: Toan Tran, Dom Huh, Vincent Guevara (Support from: <a href="https://github.com/delta">Delta Force</a>, <a href="https://github.com/VincentGarreau">Vincent Garreau</a>)
 	</footer>
+
+	<!-- Main Script -->
+	<script src="../js/main.js"></script>
+	<script src="../js/app.js"></script>
+
+
+
 </body>
 </html>
